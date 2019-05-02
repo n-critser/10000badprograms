@@ -1,0 +1,8 @@
+[package]
+name = "rustoleaum"
+version = "0.1.0"
+authors = ["nick <ecritser@law.columbia.edu>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.4.0"
