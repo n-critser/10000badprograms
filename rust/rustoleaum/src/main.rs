@@ -32,9 +32,21 @@ fn main() {
             }
         }
     }
+    let res = basis_rep(2,"10010");
+    println!("res: {}",res);
 }
 
-// fn add1(){
-//     let x = 1;
-//     return x;
-// }
+fn basis_rep(base: i32 , num){
+
+    let mut counter=0;
+    loop {
+        if counter == num.len() {
+            break;
+        } else {
+            println!("{}",num);
+            counter+=1;
+                
+        }
+    }
+    num
+}
