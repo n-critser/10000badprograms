@@ -1,6 +1,9 @@
+extern crate rand;
 use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
+//use std::slice;
+//use std::str;
 
 fn main() {
     println!("guess a number!");
@@ -32,15 +35,22 @@ fn main() {
             }
         }
     }
-    let res = basis_rep(2,"10010");
-    println!("res: {}",res);
+
+    let number="10010";
+    let len = number.len();
+    assert_eq!(5, len);
+
+    println!("len : {}",len);
+    
+    // let res = basis_rep(2,"10010");
+    // println!("res: {}",res);
 }
 
-fn basis_rep(base: i32 , num){
+// fn basis_rep(base: i32 , num:str){
 
-    let mut counter=0;
-    for letter in num.iter(){
-        println!("letter : {}",letter);
-    }
-    num
-}
+//     let mut counter=0;
+//     // for letter in num.iter(){
+//     //     println!("letter : {}",letter);
+//     // }
+//     num
+// }
