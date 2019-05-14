@@ -1,0 +1,7 @@
+[package]
+name = "fibo_rust"
+version = "0.1.0"
+authors = ["n-critser <none@none>"]
+
+[dependencies]
+rand="0.3.0"
