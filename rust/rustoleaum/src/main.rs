@@ -39,14 +39,8 @@ fn main() {
 fn basis_rep(base: i32 , num){
 
     let mut counter=0;
-    loop {
-        if counter == num.len() {
-            break;
-        } else {
-            println!("{}",num);
-            counter+=1;
-                
-        }
+    for letter in num.iter(){
+        println!("letter : {}",letter);
     }
     num
 }
