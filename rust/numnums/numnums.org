@@ -1,0 +1,71 @@
+#+AUTHOR:N.Critser
+#+EMAIL:ec93@hunter.cuny.edu
+#+LATEX_CLASS: article
+#+OPTIONS: H:2 num:nil toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t
+#+LaTeX_HEADER: \usepackage{url}
+#+LaTeX_HEADER: \usepackage{listings}
+#+LaTeX_HEADER: \usepackage{amsmath}
+#+LaTeX_HEADER: \usepackage{amssymb}
+#+LaTeX_HEADER: \lstset{language=C}
+#+LaTeX_HEADER: \usepackage{geometry}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes,arrows,automata}
+#+LaTeX_HEADER: \usepackage[all]{xy}
+#+LaTeX_HEADER: \geometry{left=3.5cm,top=1.0cm,right=1.5cm,bottom=1.0cm,marginparsep=7pt, marginparwidth=.6in}
+
+* congruence
+* primality
+* divisability
+* basis-representation
+*** THEOREM:  
+
+Let k be any integer larger than 1. Then, for each positive integer n, there exists a representation
+\\
+n = a_{0}k^{s} + a_{1}k^{s-1} + . . . + a_{s} 
+\\
+where a_{0} \ne 0, and where each a_{i} is nonnegative and less than k.
+\\
+This representation of n is unique.
+\\
+It is known as the representation of n to the base k.
+
+*** PROOF:
+Let b_{k}(n) be the number of representations of n to the base k.
+We need to show that b_{k}(n) = 1 and only 1.
+\\
+\\
+Some of the coefficients  a_{i}, can be equal to zero for a particular
+representation of n. But that doesn't effect the representation,so we will
+exclude terms that are zero.
+\\
+suppose : n = a_{0}k^{s} + a_{1}k^{s-1} + . . . + a_{s-t}k^{t},
+\\ 
+neither a_{0} or a_{s-t} = 0. So subtracting 1 from n gives,
+\\
+n-1 = a_{0}k^{s} + a_{1}k^{s-1} + . . . + a_{s-t}k^{t}-1
+\\
+n-1 = a_{0}k^{s} + a_{1}k^{s-1} + . . . + (a_{s-t}-1)k^{t} + k^{t} - 1
+\\
+Since \sum_{j=0}^{n-1}x^{j}  =  \frac{x^{n-1}}{n-1}
+\\
+n-1 = a_{0}k^{s} + a_{1}k^{s-1} + . . . + (a_{s-t}-1)k^{t} + \sum_{j=0}^{t-1}(k-1)k^{j}
+* fundatmental-theorem-of-arithmatic
+* LINKS:
+https://ocw.mit.edu/courses/mathematics/18-781-theory-of-numbers-spring-2012/lecture-notes/
+
+http://www.numbertheory.org/ntw/lecture_notes.html
+http://www.numbertheory.org/ntw/names_r.html
+
+
+https://www.onlinecourses.com/math/
+
+https://ocw.mit.edu/courses/mathematics/18-781-theory-of-numbers-spring-2012/
+
+Fermat's Last Theorem, by Ken Ribet
+https://www.youtube.com/watch?v=H5jf_UYjBFY
+
+
+https://math.berkeley.edu/~ribet/115/
+http://www-personal.umich.edu/~hlm/nzm/index.html
+https://www.amazon.com/dp/0471625469/
+https://archive.org/stream/AnIntroductionToTheTheoryOfNumbers-4thEd-G.h.HardyE.m.Wright

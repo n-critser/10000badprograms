@@ -1,0 +1,88 @@
+% Created 2019-05-19 Sun 15:04
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[margin=3cm]{geometry}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\lstset{language=C}
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,automata}
+\usepackage[all]{xy}
+\geometry{left=3.5cm,top=1.0cm,right=1.5cm,bottom=1.0cm,marginparsep=7pt, marginparwidth=.6in}
+\author{N.Critser}
+\date{\today}
+\title{numnums}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+
+\section*{congruence}
+\label{sec-1}
+\section*{primality}
+\label{sec-2}
+\section*{divisability}
+\label{sec-3}
+\section*{basis-representation}
+\label{sec-4}
+\begin{itemize}
+\item THEOREM:
+\label{sec-4-0-1}
+
+Let k be any integer larger than 1. Then, for each positive integer n, there exists a representation
+\\
+n = a$_{\text{0}}$k$^{\text{s}}$ + a$_{\text{1}}$k$^{\text{s-1}}$ + . . . + a$_{\text{s}}$ 
+\\
+where a$_{\text{0}}$ $\ne$ 0, and where each a$_{\text{i}}$ is nonnegative and less than k.
+\\
+This representation of n is unique.
+\\
+It is known as the representation of n to the base k.
+
+\item PROOF:
+\label{sec-4-0-2}
+Let b$_{\text{k}}$(n) be the number of representations of n to the base k.
+We need to show that b$_{\text{k}}$(n) = 1 and only 1.
+\\
+\\
+Some of the coefficients  a$_{\text{i}}$, can be equal to zero for a particular
+representation of n. But that doesn't effect the representation,so we will
+exclude terms that are zero.
+\\
+suppose : n = a$_{\text{0}}$k$^{\text{s}}$ + a$_{\text{1}}$k$^{\text{s-1}}$ + . . . + a$_{\text{s-t}}$k$^{\text{t}}$,
+\\ 
+neither a$_{\text{0}}$ or a$_{\text{s-t}}$ = 0. So subtracting 1 from n gives,
+\\
+n-1 = a$_{\text{0}}$k$^{\text{s}}$ + a$_{\text{1}}$k$^{\text{s-1}}$ + . . . + a$_{\text{s-t}}$k$^{\text{t}}$-1
+\\
+n-1 = a$_{\text{0}}$k$^{\text{s}}$ + a$_{\text{1}}$k$^{\text{s-1}}$ + . . . + (a$_{\text{s-t}}$-1)k$^{\text{t}}$ + k$^{\text{t}}$ - 1
+\\
+Since $\sum$$_{\text{j=0}}^{\text{n-1}}$x$^{\text{j}}$  =  \frac\{x$^{\text{n-1}}$\}\{n-1\}
+\\
+n-1 = a$_{\text{0}}$k$^{\text{s}}$ + a$_{\text{1}}$k$^{\text{s-1}}$ + . . . + (a$_{\text{s-t}}$-1)k$^{\text{t}}$ + $\sum$$_{\text{j=0}}^{\text{t-1}}$(k-1)k$^{\text{j}}$
+\end{itemize}
+\section*{fundatmental-theorem-of-arithmatic}
+\label{sec-5}
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

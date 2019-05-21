@@ -1,0 +1,6 @@
+[package]
+name = "congruence"
+version = "0.1.0"
+authors = ["n-critser <none@none>"]
+
+[dependencies]
