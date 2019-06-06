@@ -1,7 +1,9 @@
 #include<iostream>
 
 int gcd(int a, int b);
+int solve(int a, int b, int c);
 
+          
 int main(){
   int a,b,c;
   std::cout << "enter integers a,b,c hitting enter each time"<<std::endl;
